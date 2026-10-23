@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about KELUZ Web Development, a digital services business based in Freetown, Sierra Leone.">
+  <meta name="theme-color" content="#030a16">
+  <title>About Us | KELUZ Web Development</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <style>
+    .about-hero {
+      padding: 80px 0 55px;
+      text-align: center;
+    }
+    .about-hero h1 {
+      font-size: clamp(2.5rem, 7vw, 4.3rem);
+      line-height: 1.12;
+      margin: 18px 0;
+    }
+    .about-hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.9;
+      opacity: .82;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-bottom: 55px;
+    }
+    .about-card {
+      padding: 28px;
+      border: 1px solid rgba(18,226,243,.18);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #0b1b30, #07101f);
+    }
+    .about-card .symbol {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .about-card h2 {
+      margin-bottom: 13px;
+      font-size: 1.35rem;
+    }
+    .about-card p {
+      line-height: 1.8;
+      opacity: .82;
+    }
+    .about-story {
+      padding: 32px;
+      margin-bottom: 55px;
+      border-radius: 20px;
+      background: #0a192b;
+      border: 1px solid rgba(255,255,255,.1);
+    }
+    .about-story h2 {
+      margin-bottom: 18px;
+    }
+    .about-story p {
+      line-height: 1.9;
+      opacity: .85;
+      margin-bottom: 14px;
+    }
+    .about-cta {
+      text-align: center;
+      padding: 45px 20px;
+      margin-bottom: 60px;
+      border-radius: 20px;
+      background: linear-gradient(120deg, #0b2b50, #10233a);
+    }
+    .about-cta p {
+      max-width: 600px;
+      margin: 15px auto 24px;
+      line-height: 1.8;
+    }
+    @media(max-width:600px) {
+      .about-hero { padding-top: 55px; }
+      .about-story { padding: 23px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html" aria-label="KELUZ home">
+        <span class="brand-mark">K</span>
+        <span class="brand-name">KELUZ<span class="brand-dot">.</span>
+          <small>WEB DEVELOPMENT</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="navLinks">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-hero container">
+      <span class="eyebrow">WHO WE ARE</span>
+      <h1>Built on ideas.<br>
+        <span class="gradient-text">Driven by technology.</span>
+      </h1>
+      <p>
+        KELUZ Web Development is a digital services brand based in
+        Freetown, Sierra Leone, focused on helping businesses and
+        creators establish their online presence through practical,
+        modern digital solutions.
+      </p>
+    </section>
+
+    <section class="container about-grid">
+      <article class="about-card">
+        <div class="symbol">🎯</div>
+        <h2>Our Mission</h2>
+        <p>
+          To make useful digital solutions more accessible to businesses
+          and individuals, helping them present their ideas, reach
+          customers and work more efficiently.
+        </p>
+      </article>
+
+      <article class="about-card">
+        <div class="symbol">🔭</div>
+        <h2>Our Vision</h2>
+        <p>
+          To grow KELUZ into a trusted technology brand offering
+          websites, applications and innovative digital products
+          to clients locally and internationally.
+        </p>
+      </article>
+
+      <article class="about-card">
+        <div class="symbol">🤝</div>
+        <h2>Our Values</h2>
+        <p>
+          Clear communication, honest pricing, continuous learning,
+          practical solutions and respect for every client's goals.
+        </p>
+      </article>
+    </section>
+
+    <section class="container">
+      <div class="about-story">
+        <h2>Our Approach</h2>
+        <p>
+          Every good digital project starts with understanding the
+          problem. We aim to learn what a client needs before deciding
+          which design, features and technologies make sense.
+        </p>
+        <p>
+          From responsive websites and business dashboards to creative
+          promotional materials, our focus is on building useful work,
+          testing it carefully and improving it over time.
+        </p>
+        <p>
+          Based in Sierra Leone, KELUZ welcomes project enquiries from
+          local businesses and clients around the world.
+        </p>
+      </div>
+
+      <div class="about-cta">
+        <h2>Let's build something useful.</h2>
+        <p>
+          Have a business idea or a digital problem to solve?
+          Get in touch and tell us what you have in mind.
+        </p>
+        <a href="contact.html" class="button button-primary">
+          Contact KELUZ →
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear">2026</span> KELUZ Web Development.
+        All rights reserved.</p>
+      <a href="home.html">Back to Home ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>

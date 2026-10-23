@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore KELUZ Web Development services: websites, apps, dashboards, flyers and video adverts.">
+  <meta name="theme-color" content="#030a16">
+  <title>Our Services | KELUZ Web Development</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <style>
+    .services-hero {
+      padding: 90px 0 55px;
+      text-align: center;
+    }
+    .services-hero h1 {
+      font-size: clamp(2.4rem, 7vw, 4.5rem);
+      line-height: 1.1;
+      margin: 18px 0;
+    }
+    .services-hero p {
+      max-width: 680px;
+      margin: 0 auto;
+      line-height: 1.8;
+      opacity: .8;
+    }
+    .services-page-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+      padding-bottom: 70px;
+    }
+    .service-detail {
+      padding: 28px;
+      border: 1px solid rgba(18, 226, 243, .18);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #0b1b30, #07101f);
+      transition: transform .2s, border-color .2s;
+    }
+    .service-detail:hover {
+      transform: translateY(-5px);
+      border-color: #168bff;
+    }
+    .service-detail .service-icon {
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+    .service-detail h2 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+    .service-detail p {
+      line-height: 1.7;
+      opacity: .8;
+    }
+    .service-detail ul {
+      padding-left: 20px;
+      line-height: 1.9;
+      margin: 18px 0;
+    }
+    .service-detail a {
+      color: #12e2f3;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .services-cta {
+      text-align: center;
+      padding: 45px 24px;
+      margin-bottom: 60px;
+      border-radius: 22px;
+      background: linear-gradient(120deg, #0b2b50, #10233a);
+      border: 1px solid rgba(18, 226, 243, .2);
+    }
+    .services-cta h2 {
+      margin-bottom: 14px;
+    }
+    .services-cta p {
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+    @media (max-width: 600px) {
+      .services-hero { padding-top: 55px; }
+      .service-detail { padding: 23px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html" aria-label="KELUZ home">
+        <span class="brand-mark">K</span>
+        <span class="brand-name">KELUZ<span class="brand-dot">.</span>
+          <small>WEB DEVELOPMENT</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="navLinks">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="services-hero container">
+      <span class="eyebrow">WHAT WE DO</span>
+      <h1>Digital solutions for<br>
+        <span class="gradient-text">your next big idea.</span>
+      </h1>
+      <p>
+        KELUZ Web Development helps businesses, entrepreneurs
+        and creators build a stronger online presence through
+        modern websites, useful applications and creative digital services.
+      </p>
+    </section>
+
+    <section class="container services-page-grid">
+
+      <article class="service-detail">
+        <div class="service-icon">🌐</div>
+        <h2>Website Development</h2>
+        <p>Modern, responsive websites designed to work across phones,
+          tablets and computers.</p>
+        <ul>
+          <li>Business websites</li>
+          <li>Portfolio websites</li>
+          <li>Landing pages</li>
+          <li>Website maintenance</li>
+        </ul>
+        <a href="contact.html">Request a website →</a>
+      </article>
+
+      <article class="service-detail">
+        <div class="service-icon">📱</div>
+        <h2>App Development</h2>
+        <p>Practical digital application projects designed around
+          your business or personal idea.</p>
+        <ul>
+          <li>Web applications</li>
+          <li>Business tools</li>
+          <li>Simple interactive apps</li>
+          <li>App prototypes</li>
+        </ul>
+        <a href="contact.html">Discuss your app →</a>
+      </article>
+
+      <article class="service-detail">
+        <div class="service-icon">📊</div>
+        <h2>Dashboards</h2>
+        <p>Organize information and simplify everyday business tasks
+          with useful dashboard interfaces.</p>
+        <ul>
+          <li>Business dashboards</li>
+          <li>Sales tracking interfaces</li>
+          <li>Appointment interfaces</li>
+          <li>Reports and summaries</li>
+        </ul>
+        <a href="contact.html">Plan a dashboard →</a>
+      </article>
+
+      <article class="service-detail">
+        <div class="service-icon">🎨</div>
+        <h2>Flyer Design</h2>
+        <p>Clear promotional designs for businesses, events and
+          products that need to get noticed.</p>
+        <ul>
+          <li>Business promotions</li>
+          <li>Event flyers</li>
+          <li>Product advertisements</li>
+          <li>Social media graphics</li>
+        </ul>
+        <a href="contact.html">Request a design →</a>
+      </article>
+
+      <article class="service-detail">
+        <div class="service-icon">🎬</div>
+        <h2>Video Adverts</h2>
+        <p>Promotional video concepts to help present your products,
+          services or business online.</p>
+        <ul>
+          <li>Short promotional videos</li>
+          <li>Product advert concepts</li>
+          <li>Social media video content</li>
+          <li>Business introductions</li>
+        </ul>
+        <a href="contact.html">Plan a video advert →</a>
+      </article>
+
+      <article class="service-detail">
+        <div class="service-icon">🛠️</div>
+        <h2>Website Support</h2>
+        <p>Help with improving, updating and maintaining existing
+          websites and their content.</p>
+        <ul>
+          <li>Content updates</li>
+          <li>Mobile layout improvements</li>
+          <li>Basic website checks</li>
+          <li>Feature improvements</li>
+        </ul>
+        <a href="contact.html">Get website support →</a>
+      </article>
+
+    </section>
+
+    <section class="container">
+      <div class="services-cta">
+        <h2>Have an idea? Let's build it.</h2>
+        <p>
+          Tell us what you need, and we can discuss the project,
+          requirements and budget before work begins.
+        </p>
+        <a class="button button-primary" href="contact.html">
+          Contact KELUZ →
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear">2026</span> KELUZ Web Development.
+        All rights reserved.</p>
+      <a href="index.html">Back to Home ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>

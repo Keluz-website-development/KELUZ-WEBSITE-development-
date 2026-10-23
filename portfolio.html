@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore website and digital projects by KELUZ Web Development in Sierra Leone.">
+  <meta name="theme-color" content="#030a16">
+  <title>Our Portfolio | KELUZ Web Development</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <style>
+    .portfolio-hero {
+      text-align: center;
+      padding: 85px 0 45px;
+    }
+    .portfolio-hero h1 {
+      font-size: clamp(2.4rem, 7vw, 4.3rem);
+      line-height: 1.12;
+      margin: 18px 0;
+    }
+    .portfolio-hero p {
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.8;
+      opacity: .8;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding-bottom: 65px;
+    }
+    .portfolio-card {
+      overflow: hidden;
+      border: 1px solid rgba(18,226,243,.17);
+      border-radius: 18px;
+      background: #071529;
+    }
+    .portfolio-art {
+      min-height: 205px;
+      padding: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top right, #164a7d, #071529 70%);
+    }
+    .portfolio-art.purple {
+      background: radial-gradient(circle at top right, #593b88, #071529 70%);
+    }
+    .portfolio-art.teal {
+      background: radial-gradient(circle at top right, #087b83, #071529 70%);
+    }
+    .browser-mockup {
+      width: 100%;
+      max-width: 330px;
+      padding: 13px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 10px;
+      background: rgba(3,10,22,.9);
+      box-shadow: 0 14px 40px rgba(0,0,0,.25);
+    }
+    .browser-dots {
+      color: #12e2f3;
+      letter-spacing: 4px;
+      font-size: 12px;
+      padding-bottom: 14px;
+    }
+    .mockup-heading {
+      height: 10px;
+      width: 70%;
+      border-radius: 8px;
+      background: #168bff;
+      margin: 12px 0;
+    }
+    .mockup-line {
+      height: 5px;
+      width: 90%;
+      border-radius: 5px;
+      background: #30465f;
+      margin: 8px 0;
+    }
+    .mockup-line.short { width: 55%; }
+    .mockup-blocks {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+      margin-top: 16px;
+    }
+    .mockup-blocks span {
+      height: 35px;
+      border-radius: 5px;
+      background: #102b47;
+      border: 1px solid rgba(18,226,243,.2);
+    }
+    .portfolio-content { padding: 23px; }
+    .project-type {
+      color: #12e2f3;
+      font-size: .78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+    .portfolio-content h2 {
+      font-size: 1.35rem;
+      margin: 10px 0;
+    }
+    .portfolio-content p {
+      line-height: 1.75;
+      opacity: .8;
+      margin-bottom: 18px;
+    }
+    .project-status {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: .78rem;
+      background: rgba(18,226,243,.09);
+      color: #12e2f3;
+      border: 1px solid rgba(18,226,243,.2);
+    }
+    .portfolio-note {
+      margin: 0 auto 55px;
+      padding: 20px;
+      border-radius: 12px;
+      background: #0a192b;
+      border: 1px solid rgba(255,255,255,.1);
+      line-height: 1.7;
+    }
+    .portfolio-cta {
+      text-align: center;
+      padding: 45px 20px;
+      margin-bottom: 60px;
+      border-radius: 20px;
+      background: linear-gradient(120deg, #0b2b50, #10233a);
+    }
+    .portfolio-cta p {
+      line-height: 1.8;
+      margin: 15px auto 23px;
+      max-width: 580px;
+    }
+    @media(max-width:600px) {
+      .portfolio-hero { padding-top: 55px; }
+      .portfolio-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html" aria-label="KELUZ home">
+        <span class="brand-mark">K</span>
+        <span class="brand-name">KELUZ<span class="brand-dot">.</span>
+          <small>WEB DEVELOPMENT</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="navLinks">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portfolio-hero container">
+      <span class="eyebrow">OUR WORK</span>
+      <h1>Ideas turned into<br>
+        <span class="gradient-text">digital experiences.</span>
+      </h1>
+      <p>
+        Explore selected projects and concepts from KELUZ Web Development.
+        We build digital experiences designed to help businesses and
+        creators grow.
+      </p>
+    </section>
+
+    <section class="container portfolio-grid">
+
+      <article class="portfolio-card">
+        <div class="portfolio-art">
+          <div class="browser-mockup">
+            <div class="browser-dots">● ● ●</div>
+            <div class="mockup-heading"></div>
+            <div class="mockup-line"></div>
+            <div class="mockup-line short"></div>
+            <div class="mockup-blocks"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <span class="project-type">Healthcare Website</span>
+          <h2>NeoLife Modern Care Clinic</h2>
+          <p>A clinic website concept for presenting healthcare services,
+            clinic information and appointment features.</p>
+          <span class="project-status">Website project</span>
+        </div>
+      </article>
+
+      <article class="portfolio-card">
+        <div class="portfolio-art purple">
+          <div class="browser-mockup">
+            <div class="browser-dots">● ● ●</div>
+            <div class="mockup-heading"></div>
+            <div class="mockup-line short"></div>
+            <div class="mockup-line"></div>
+            <div class="mockup-blocks"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <span class="project-type">Automotive Concept</span>
+          <h2>KELUZ Motor</h2>
+          <p>An automotive brand concept exploring vehicle ideas,
+            future technology and a distinctive digital identity.</p>
+          <span class="project-status">Concept project</span>
+        </div>
+      </article>
+
+      <article class="portfolio-card">
+        <div class="portfolio-art teal">
+          <div class="browser-mockup">
+            <div class="browser-dots">● ● ●</div>
+            <div class="mockup-heading"></div>
+            <div class="mockup-line"></div>
+            <div class="mockup-line short"></div>
+            <div class="mockup-blocks"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <span class="project-type">Business Website</span>
+          <h2>Building Materials Shop</h2>
+          <p>A digital project concept for presenting building materials,
+            plumbing supplies and related shop products.</p>
+          <span class="project-status">Business project</span>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="container">
+      <div class="portfolio-note">
+        <strong>Portfolio transparency:</strong>
+        These cards describe project work and concepts. The graphic previews
+        are illustrative mockups, not screenshots of finished websites.
+        Update each entry with accurate details as projects progress.
+      </div>
+
+      <div class="portfolio-cta">
+        <h2>Want your project featured here?</h2>
+        <p>
+          Let's discuss your website, application or business idea and
+          turn it into a practical digital project.
+        </p>
+        <a href="contact.html" class="button button-primary">
+          Start a Project →
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear">2026</span> KELUZ Web Development.
+        All rights reserved.</p>
+      <a href="index.html">Back to Home ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
